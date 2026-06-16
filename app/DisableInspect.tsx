@@ -1,13 +1,12 @@
-// app/DisableInspect.jsx
 'use client';
 
 import { useEffect } from 'react';
 
 export default function DisableInspect() {
   useEffect(() => {
-    const blockContextMenu = (e) => e.preventDefault();
+    const blockContextMenu = (e: MouseEvent) => e.preventDefault();
 
-    const blockKeys = (e) => {
+    const blockKeys = (e: KeyboardEvent) => {
       const blocked =
         e.key === 'F12' ||
         (e.ctrlKey && e.shiftKey && ['I', 'J', 'C'].includes(e.key)) ||
