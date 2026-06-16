@@ -65,15 +65,15 @@ const ProjectsList = () => {
 
         <div className="flex flex-col pt-8 space-y-4">
           {projects.map((project) => (
-            <Modal key={project.id}>
-              <ModalTrigger className="block w-full p-0 text-left rounded-md overflow-hidden">
+            <Modal  key={project.id}>
+              <ModalTrigger className="block w-full p-0  text-left rounded-md overflow-hidden">
                 <div className="rounded-md bg-zinc-100 py-4 dark:bg-zinc-900 cursor-pointer transition-shadow hover:shadow-md">
                   <div className="mx-5 flex items-start justify-between gap-3">
                     <div className="flex flex-col min-w-0">
                       <p className="font-semibold text-md tracking-tight">
                         {project.title}
                       </p>
-                      <p className="text-xs text-[#4b5563] dark:text-[#9ca3af] tracking-tighter break-words">
+                      <p className="text-xs text-[#4b5563] dark:text-[#9ca3af] tracking-tighter wrap-break-word">
                         {project.desc}
                       </p>
                     </div>
@@ -84,8 +84,8 @@ const ProjectsList = () => {
                 </div>
               </ModalTrigger>
 
-              <ModalBody>
-                <ModalContent className="p-0 overflow-y-auto">
+              <ModalBody className="px-3 sm:px-2">
+                <ModalContent className="p-0 px-5 sm:px-2 pt-9 sm:pt-0 overflow-y-auto">
                   <div className="relative w-full aspect-video">
                     {project.image && project.image !== "#" ? (
                       <Image
