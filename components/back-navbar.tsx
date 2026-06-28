@@ -12,7 +12,7 @@ const BackNavbar = () => {
       <div className="flex w-full  max-w-2xl items-center justify-between px-5 sm:px-3">
         <ArrowLeft
           onClick={() => navigate.push("/")}
-          className="h-6 w-6 cursor-pointer"
+          className="h-6 w-6 cursor-pointer transition-all duration-200 hover:-translate-x-0.5"
         />
 
         <div className="flex items-center justify-center gap-2.5 px-2 text-xs tracking-tight text-balance sm:text-sm">

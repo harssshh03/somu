@@ -35,7 +35,7 @@ const Footer = () => {
         </a>
         and on
         <a
-          href="https://github.com/#"
+          href="https://github.com/soumya-singh18"
           target="_blank"
           className="underline px-1 decoration-gray-200 decoration-4 dark:decoration-gray-800"
         >
@@ -68,7 +68,7 @@ const Footer = () => {
         </div>
 
         <div className="flex items-center gap-3">
-          <a href="https://github.com/#" target="_blank">
+          <a href="https://github.com/soumya-singh18" target="_blank">
             <GithubIcon className="w-4 h-4 text-zinc-900 dark:text-zinc-300 hover:opacity-70 transition-opacity" />
           </a>
 
@@ -76,7 +76,7 @@ const Footer = () => {
             <LinkedinIcon className="w-4 h-4 text-zinc-900 dark:text-zinc-300 hover:opacity-70 transition-opacity" />
           </a>
 
-          <a href="/ME.pdf" target="_blank">
+          <a href="/resume.pdf" target="_blank">
             <ResumeIcon className="w-4 h-4 text-zinc-900 dark:text-zinc-300 hover:opacity-70 transition-opacity" />
           </a>
         </div>

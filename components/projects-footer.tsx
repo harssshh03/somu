@@ -18,7 +18,7 @@ const ProjectsFooter = () => {
 
         
         <div className="flex items-center  gap-3">
-         <a href="https://github.com/#" target="_blank">
+         <a href="https://github.com/soumya-singh18" target="_blank">
             <GithubIcon className="w-4 h-4 text-zinc-900 dark:text-zinc-300 hover:opacity-70 transition-opacity" />
           </a>
 
